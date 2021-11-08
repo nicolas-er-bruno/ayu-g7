@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>base para molde de preguntas</title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="local-style.css" rel="stylesheet">
+    <link href="assets/font-icon.css" rel="stylesheet">
+
+  </head>
+  <body class="g-bg-gray">
+        <!-- As a heading -->
+        <nav class="navbar navbar-light bg-light" style="margin-bottom: 22px;">
+          <div class="container-fluid">            
+            <span class="navbar-brand mb-0 h1">Título del examen</span>
+            <span>Timer 00:00</span>
+          </div>
+        </nav>
+       
+        <!-- MAIN CONTAINER -->
+        <div class="g-containter">
+             <!-- CONTAINER BG blanco -->
+            <div class="g-containter-white">
+                <!-- section cabecera -->
+                <div>
+                  <div style="display:flex; flex-direction: row; justify-content: space-between;">
+                      <!-- Slider coderpen 02 -->
+                      <div style="width: calc(100% - 40px);">
+                          <output id="rangevalue1" style="margin-right: 8px;"></output>
+                          <input class="range" type="range" min="1" max="10" value="2" step="1" onmousemove="rangevalue1.value=value" style="width: calc(100% - 50px);"/>
+                      </div>
+                          
+                      <!-- Button Collapse -->
+                          <p>
+                            
+                          <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="border:none;">
+                            <span class="icon-keyboard_arrow_down" style="font-size: 25px;"></span>
+                          </a>
+                          </p>
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                  <div class="card card-body" style="border:none; margin-bottom:16px;">
+                     <p>Aca habira un <strong>ul</strong> con <strong>li´s</strong> con <strong>a</strong> dentro para cada pregunta. creo que lo ideal seria algo de java para que no vaya a otra pagina pero poner una etiqueta a para mostrar en la maqueda explica la idea. </p>
+                  </div>
+                  </div>
+
+                  <!-- Acordion -->
+                  <!--
+                  <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Glosario
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <p>Aca habira un <strong>ul</strong> con <strong>li´s</strong> con <strong>a</strong> dentro para cada pregunta. creo que lo ideal seria algo de java para que no vaya a otra pagina pero poner una etiqueta a para mostrar en la maqueda explica la idea. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>-->
+              </div>
+
+                <h1>02 - Pregunta del examen de ejemplo</h1>
+                <p>Texto descriptivo de la preguhnta si es que fuera necesario, ya que no todas las preguntas lo tendrian. Pero en el caso de tenerlo asi se veria.</p>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Default checked radio
+                  </label>
+                </div>
+
+                </br>
+
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Justifique su respuesta</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="paginator-btns">
+                  <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button">Pregunta Anterior</a>
+                  <a class="btn btn-outline-success" href="#" role="button">Pregunta Siguiente</a>
+                </div>
+
+                <!-- paginator -->
+                <!--<nav aria-label="Page navigation example">
+                <ul class="pagination" style="justify-content: flex-end;">
+                    <li class="page-item"><a class="page-link" href="pregunta-molde-01.html">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="pregunta-molde-01.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+                </nav>-->
+            </div>
+                           
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Contactar docente</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+  
+                      <p>Puedes contactar a algun docente disponible por cualquier consulta sobre el examen, tanto consulta generales como alguna pregunta enm copncreto</p>
+                      <p>Antes de consultar puedes ver las <strong>preguntas frecuentes</strong> ya respondidas.</p>
+  
+                      <!-- Acordion preuntas frecuentes-->
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              <strong>Preguntas Frecuentes</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>Aca habira un <strong>ul</strong> con <strong>ol´s</strong> con <strong>las preguntas frecuentes</strong>. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!--<button type="button" class="btn btn-success" href="/contactar-docente">Contactar</button>-->
+                      <a class="btn btn-success" href="contactar-docente.html" role="button">Contactar</a>
+                  </div>
+                  </div>
+              </div>
+              </div>
+  
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Contactar docente
+              </button>
+  
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Terminar examen
+              </button>
+  
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">¡Estás a un paso!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Si no tienes más dudas del examen lo podes entregar. Si tienes alguna inquietud recuerda que puedes consultar a cualquiera de nuestros docentes con el botón de “contactar docente”.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <a class="btn btn-success" href="examen-finalizado.html" role="button">Enviar examen</a> 
+                      <!--<button type="button" class="btn btn-success">Enviar examen</button>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

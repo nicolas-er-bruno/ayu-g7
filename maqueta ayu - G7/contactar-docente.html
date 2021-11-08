@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>contactar docente</title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="local-style.css" rel="stylesheet">
+
+  </head>
+  <body class="g-bg-gray">
+        <!-- As a heading -->
+        <nav class="navbar navbar-light bg-light" style="margin-bottom: 22px;">
+          <div class="container-fluid">
+            <a href="#">volver</a>
+            <span class="navbar-brand mb-0 h1">Título del examen</span>
+            <span>Timer 00:00</span>
+          </div>
+        </nav>
+       
+        <!-- MAIN CONTAINER -->
+        <div class="g-containter">
+            <div style="width: 100%;">
+              <h1 class="g-h-flotante">¡Ya te asignamos un docente!</h1>
+            </div>
+             <!-- CONTAINER BG blanco -->
+            <div class="g-containter-white">              
+              <div class="content-docente">
+                <div class="content-docente-width">
+                  <img alt="" src="assets/docente-anna.png" style="width: 100px; height: 100px;">
+                  <div>
+                    <h2>Anna Coppola</h2>
+                    <p>Docente titular</p>
+                    <p>Docente desde 2018</p>
+                    <p>Superpoder: Asado</p>
+                  </div>
+                </div>
+                <hr class="v-hr"></hr>
+                <div class="content-estudiantes-width">
+                  <p class="h3">4 estudiantes</p>
+                  <p>5 minutos por alumno.</p>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success btn-confirm-do" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Confirmar
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">¡Ya estás en la lista de espera!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Ya tienes un cupo para hacerle tu consulta al docente. Tranquilo, mientras esperas puedes seguir con tu examen. ¡Te avisaremos cuando sea tu turno! <strong>Recuerda que tienes 3 minutos de tolerancia para conectarte.</strong>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-success" href="pregunta-molde-01-consulta.html" role="button">Seguir con mi examen</a>
+                    <!--<button type="button" class="btn btn-outline-success">Seguir con mi examen</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="otros-docentes">
+              <h2>Eleguir otro docente</h2>
+              <hr>
+              <div class="otro-docente">
+                <div class="docente">
+                  <img alt="" src="assets/docente-marguerita.png" style="width: 50px; height: 50px;">
+                  <div>
+                    <h3>Margarita Rossi</h3>
+                    <p>Ayudante de cátedra</p>
+                  </div>
+                </div>
+                <p><strong>6 estudiantes en espera</strong></p>
+                <a class="btn btn-outline-success" href="#" role="button">Solicitar</a>
+              </div>
+              <hr>
+              <div class="otro-docente">
+                <div class="docente">
+                  <img alt="" src="assets/docente-mario.png" style="width: 50px; height: 50px;">
+                  <div>
+                    <h3>Mario Longo</h3>
+                    <p>Ayudante de cátedra</p>
+                  </div>
+                </div>
+                <p><strong>6 estudiantes en espera</strong></p>
+                <a class="btn btn-outline-success" href="#" role="button">Solicitar</a>
+              </div>
+            </div> 
+        </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
