@@ -12,21 +12,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link href="local-style.css" rel="stylesheet">
 
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+
   </head>
   <body class="g-bg-gray">
         <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light" style="margin-bottom: 22px;">
-          <div class="container-fluid">
-            <a href="#">volver</a>
-            <span class="navbar-brand mb-0 h1">Título del examen</span>
-            <span>Timer 00:00</span>
-          </div>
+        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+          <div class="nav-arreglo">      
+            <div  class="title-examen" style="display: flex; gap: 20px;">
+              <div>
+                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                  <p>En curso</p>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: right;">
+               <span>Timer 20:00</span>
+            </div>
+          </div>          
         </nav>
        
         <!-- MAIN CONTAINER -->
         <div class="g-containter">
             <div style="width: 100%;">
-              <h1 class="g-h-flotante">¡Ya te asignamos un docente!</h1>
+              <h1 class="g-h-flotante">¡Ta te asignamos un docente!</h1>
             </div>
              <!-- CONTAINER BG blanco -->
             <div class="g-containter-white">              
@@ -37,13 +49,12 @@
                     <h2>Anna Coppola</h2>
                     <p>Docente titular</p>
                     <p>Docente desde 2018</p>
-                    <p>Superpoder: Asado</p>
                   </div>
                 </div>
                 <hr class="v-hr"></hr>
                 <div class="content-estudiantes-width">
-                  <p class="h3">4 estudiantes</p>
-                  <p>5 minutos por alumno.</p>
+                  <p class="h5">2 estudiantes adelante tuyo</p>
+                  <p>8 minutos por estudiante aproximadamente</p>
                 </div>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-success btn-confirm-do" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -61,11 +72,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    Ya tienes un cupo para hacerle tu consulta al docente. Tranquilo, mientras esperas puedes seguir con tu examen. ¡Te avisaremos cuando sea tu turno! <strong>Recuerda que tienes 3 minutos de tolerancia para conectarte.</strong>
+                    Vas a hablar con tu docente una vez termine de ayudar a tus compañeros, mientras podés continuar tu examen.
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-success" href="pregunta-molde-01-consulta.html" role="button">Seguir con mi examen</a>
+                  <div class="modal-footer">                    
+                    <a class="btn btn-success" href="pregunta-molde-01-consulta.html" role="button">Continuar examen</a>
                     <!--<button type="button" class="btn btn-outline-success">Seguir con mi examen</button>-->
                   </div>
                 </div>
@@ -73,14 +83,14 @@
             </div>
 
             <div class="otros-docentes">
-              <h2>Eleguir otro docente</h2>
+              <h2 class="h4">Eleguir otro docente</h2>
               <hr>
               <div class="otro-docente">
                 <div class="docente">
                   <img alt="" src="assets/docente-marguerita.png" style="width: 50px; height: 50px;">
                   <div>
-                    <h3>Margarita Rossi</h3>
-                    <p>Ayudante de cátedra</p>
+                    <h3 class="h5">Margarita Rossi</h3>
+                    <p>Docenten titular</p>
                   </div>
                 </div>
                 <p><strong>6 estudiantes en espera</strong></p>
@@ -91,8 +101,8 @@
                 <div class="docente">
                   <img alt="" src="assets/docente-mario.png" style="width: 50px; height: 50px;">
                   <div>
-                    <h3>Mario Longo</h3>
-                    <p>Ayudante de cátedra</p>
+                    <h3 class="h5">Mario Longo</h3>
+                    <p>Docente auxiliar</p>
                   </div>
                 </div>
                 <p><strong>6 estudiantes en espera</strong></p>

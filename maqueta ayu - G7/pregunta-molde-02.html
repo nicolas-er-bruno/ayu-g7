@@ -13,14 +13,27 @@
     <link href="local-style.css" rel="stylesheet">
     <link href="assets/font-icon.css" rel="stylesheet">
 
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+
   </head>
   <body class="g-bg-gray">
         <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light" style="margin-bottom: 22px;">
-          <div class="container-fluid">            
-            <span class="navbar-brand mb-0 h1">Título del examen</span>
-            <span>Timer 00:00</span>
-          </div>
+        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+          <div class="nav-arreglo">      
+            <div  class="title-examen" style="display: flex; gap: 20px;">
+              <div>
+                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                  <p>En curso</p>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: right;">
+               <span>Timer 20:00</span>
+            </div>
+          </div>          
         </nav>
        
         <!-- MAIN CONTAINER -->
@@ -68,19 +81,31 @@
                     </div>-->
               </div>
 
-                <h1>02 - Pregunta del examen de ejemplo</h1>
+                <h1>02 - Pastas básicas</h1>
                 <p>Texto descriptivo de la preguhnta si es que fuera necesario, ya que no todas las preguntas lo tendrian. Pero en el caso de tenerlo asi se veria.</p>
                 
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                   <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
+                    Poner el agua, hervirla, poner sal, poner los fideos
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                   <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
+                    Picar una cebolla y saltearla hasta que esté dorada
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Hervir los fideos
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Cortar cubitos de zapallo y meterlos al horno
                   </label>
                 </div>
 
@@ -91,9 +116,15 @@
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
 
-                <div class="paginator-btns">
-                  <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button">Pregunta Anterior</a>
-                  <a class="btn btn-outline-success" href="#" role="button">Pregunta Siguiente</a>
+                <div class="actions-questions">
+                  <div class="paginator-cutom">
+                    <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button"><span class="icon-arrow_back_ios"></span></a>
+                    <a class="btn btn-outline-success" href="#" role="button"><span class="icon-arrow_forward_ios"></span></a>
+                  </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Entregar
+                  </button>
                 </div>
 
                 <!-- paginator -->
@@ -109,7 +140,7 @@
             </div>
                            
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true">
               <div class="modal-dialog">
                   <div class="modal-content">
                   <div class="modal-header">
@@ -118,8 +149,8 @@
                   </div>
                   <div class="modal-body">
   
-                      <p>Puedes contactar a algun docente disponible por cualquier consulta sobre el examen, tanto consulta generales como alguna pregunta enm copncreto</p>
-                      <p>Antes de consultar puedes ver las <strong>preguntas frecuentes</strong> ya respondidas.</p>
+                      <p>Podés contactar a algún docente disponible por cualquier consulta que tengas durante el examen.</p>
+                      <p>Ten en cuenta que puede tomar unos minutos mientras los docentes terminan de responder las preguntas de tus compañeros.</p>
   
                       <!-- Acordion preuntas frecuentes-->
                       <div class="accordion" id="accordionExample">
@@ -137,8 +168,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <div class="modal-footer">                      
                       <!--<button type="button" class="btn btn-success" href="/contactar-docente">Contactar</button>-->
                       <a class="btn btn-success" href="contactar-docente.html" role="button">Contactar</a>
                   </div>
@@ -147,17 +177,13 @@
               </div>
   
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Contactar docente
               </button>
   
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Terminar examen
-              </button>
   
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" aria-modal="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -165,11 +191,12 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      Si no tienes más dudas del examen lo podes entregar. Si tienes alguna inquietud recuerda que puedes consultar a cualquiera de nuestros docentes con el botón de “contactar docente”.
+                      <p>Estas a punto de entregar tu exámen.</p>
+                      <p>¿Querés continuar?</p>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <a class="btn btn-success" href="examen-finalizado.html" role="button">Enviar examen</a> 
+                    <div class="modal-footer"> 
+                      <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cerrar</button>                     
+                      <a class="btn btn-success" href="examen-finalizado.html" role="button">Entregar</a> 
                       <!--<button type="button" class="btn btn-success">Enviar examen</button>-->
                     </div>
                   </div>

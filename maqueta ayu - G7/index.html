@@ -11,21 +11,34 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link href="local-style.css" rel="stylesheet">
+    <link href="assets/font-icon.css" rel="stylesheet">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 
   </head>
   <body class="g-bg-gray">
         <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light" style="margin-bottom: 22px;">
-          <div class="container-fluid">  
-             <div class="nav-center">                
-                <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button">Empezar examen</a> 
-                <div>
-                 <span class="navbar-brand mb-0 h1">Título del examen</span>
-                 <p>Empezamos en 5 minutos</p>
-                </div>
-              </div>              
+       
+        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <div class="nav-arreglo">
+          <ol class="breadcrumb" style="margin:auto 0;">                
+            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>          
+          <div style="display: flex; gap: 20px;">
+            <div>
+                <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                <p>Empezamos en 5 minutos</p>
+            </div>
+            <a class="btn btn-success" href="pregunta-molde-01.html" role="button">Iniciar examen</a>
           </div>
-        </nav>
+          <div style="display: flex; justify-content: right;">
+          <span class="icon-person"></span>
+          </div>
+        </div>          
+      </nav>
 
         <div>
             <h1 class="g-h-flotante">Todo sobre tu examen de hoy</h1>
@@ -35,16 +48,19 @@
               
               <div class="card-body">
                 <h5 class="card-title">¿Quién me va a evaluar?</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet</p>
-                <a href="perfiles-docentes.html" class="btn btn-outline-success">Ver</a>
+                <p class="card-text">Te van a acompañar en el examen docentes titulares y auxiliares de la cursada, no dudes preguntarles lo que precises.
+                </p><p>
+                  Conoce a tus docentes; quiénes son, a qué se dedican y por qué son los mejores en su campo.</p>
+                <a href="perfiles-docentes.html" class="btn btn-outline-success">Ver mas</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">
               
               <div class="card-body">
                 <h5 class="card-title">¿Qué van a evaluar?</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet</p>
-                <a href="apuntes.html" class="btn btn-outline-success">Ver</a>
+                <p class="card-text">Te será evaluada la bibliografía asignada al principio de la cursada.</p>
+                <p>Encuentra todo el material necesario para poder realizar el examen, además de recursos adicionales que te ayudarán al momento de estudiar.</p>
+                <a href="apuntes.html" class="btn btn-outline-success">Ver mas</a>
               </div>
             </div>
             

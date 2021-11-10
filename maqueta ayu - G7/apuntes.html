@@ -13,52 +13,75 @@
     <link href="local-style.css" rel="stylesheet">
     <link href="assets/font-icon.css" rel="stylesheet">
 
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
   </head>
   <body class="g-bg-gray">
         <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light" style="margin-bottom: 22px;">
-          <div class="container-fluid">
-            <ol class="breadcrumb">
+        
+        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+          <div class="nav-arreglo">
+            <ol class="breadcrumb" style="margin:auto 0;">
               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Apuntes</li>
-          </ol> 
-            <span class="navbar-brand mb-0 h1">Título del examen</span>
-            <span>Timer 00:00</span>
-          </div>
+            </ol>          
+            <div style="display: flex; gap: 20px;">
+              <div>
+                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                  <p>Empezamos en 5 minutos</p>
+              </div>
+              <a class="btn btn-success" href="pregunta-molde-01.html" role="button">Iniciar examen</a>
+            </div>
+            <div style="display: flex; justify-content: right;">
+            <span class="icon-person"></span>
+            </div>
+          </div>          
         </nav>
-
         
+        <h1 class="g-h-flotante">¡Preparate para el examen!</h1>
         <!-- MAIN CONTAINER -->
-        <div class="g-containter">   
-           <h2>Bibliografía</h2>  
+        <div class="g-containter-3">   
+           <h2 class="h4">Bibliografía</h2>  
            <div class="biblio-section">
                <div class="apuntes-section">
                     <div class="apunte-file">
-                        <p>Introduccion a la accesibilidad</p><span class="icon-keyboard_arrow_right"></span>
+                        <p>Unidad 1: Introducción a la cocina italiana</p><span class="icon-keyboard_arrow_right"></span>
                     </div>
                     <div class="apunte-file">
-                        <p>Introduccion a la accesibilidad</p><span class="icon-keyboard_arrow_right"></span>
+                        <p>Unidad 2: La pasta y las legumbres</p><span class="icon-keyboard_arrow_right"></span>
                     </div>
                     <div class="apunte-file">
-                        <p>Introduccion a la accesibilidad</p><span class="icon-keyboard_arrow_right"></span>
+                        <p>Unidad 3: Carnes y pescados</p><span class="icon-keyboard_arrow_right"></span>
                     </div>
                     <div class="apunte-file">
-                        <p>Introduccion a la accesibilidad</p><span class="icon-keyboard_arrow_right"></span>
+                        <p>Unidad 4: Los vinos</p><span class="icon-keyboard_arrow_right"></span>
                     </div>                    
                </div>
                <div class="info-examen-section">
-                   <p class="h2">CANTIDAD DE PREGUNTAS</p>
-                   <p><strong>80 preguntas</strong></p>
+                   <div class="info-examen-section-data">
+                      <div>
+                      <p class="h3 ">4</p>
+                      <p>Preguntas</p>
+                      </div>
+                      <div>
+                        <p class="h3">20</p>
+                        <p>Minutos</p>
+                      </div>
+                   </div>
+                   <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button">Practicar</a>
                    
                </div>
            </div>       
-           <h2>Dudas y consultas</h2>
+           <h2 class="h4">Dudas y consultas</h2>
            <!-- Acordion -->
            <div class="accordion" id="accordionExample" style="width: 100%;">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Accordion Item #1
+                  ¿Cuántas preguntas va a tener el examen?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -70,7 +93,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                  ¿Toman lo que se vio la última clase?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">

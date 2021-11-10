@@ -1,6 +1,7 @@
  /*GLOBAL*/ 
 body{
  padding-bottom: 50px;
+ font-family: 'Roboto', sans-serif;
 }
 
 p{margin:0}
@@ -14,7 +15,7 @@ p{margin:0}
   margin: auto; 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
  }
 
  .g-containter-2 {
@@ -27,14 +28,25 @@ p{margin:0}
   justify-content: center;
  }
 
+ .g-containter-3 {
+   width: 90%; 
+  max-width: 950px;
+  margin: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+ }
+
  .g-h-flotante{
    margin:auto auto 32px auto;
    text-align: center;
  }
 
-.nav-center{
-  margin-left: 340px;
-  display: block;
+.nav-arreglo{
+  display: grid;
+  grid-template-columns: 365px 470px 365px;
+  align-items:center;
+  vertical-align: middle;
 }
 
 
@@ -55,6 +67,24 @@ p{margin:0}
   .paginator-btns a,
   .paginator-btns button{
     width: 49%;
+  }
+
+  .title-examen{
+    grid-column: 2 / 3;
+  }
+
+  .actions-questions{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .actions-questions .paginator-cutom{
+    display: flex;
+  }
+  .actions-questions .paginator-cutom a,
+  .actions-questions .paginator-cutom button{
+    margin-right: 20px;
+    border-radius: 50%;
   }
 
   /*contactar docente*/
@@ -109,6 +139,7 @@ p{margin:0}
   .docente{
     display: flex;
     gap: 12px;
+    width: 220px;
   }
 
   /*Perfiles docentes*/
@@ -182,6 +213,21 @@ p{margin:0}
     background-color: #fff;
     padding: 18px;
     border-radius: 12px;
+    text-align: center;
+  }
+
+  .info-examen-section-data{
+    display: flex;  
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .info-examen-section-data .h3{
+    color: #198754;
+    background-color: #F0FDF0;
+    border-radius: 50%;
+    padding: 15px;
+    vertical-align: middle;
   }
 
   .apunte-file {
