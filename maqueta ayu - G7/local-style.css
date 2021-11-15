@@ -37,6 +37,15 @@ p{margin:0}
   justify-content: left;
  }
 
+ .g-containter-4 {
+  width: 90%; 
+  max-width: 950px;
+  margin: auto; 
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+ }
+
  .g-h-flotante{
    margin:auto auto 32px auto;
    text-align: center;
@@ -244,7 +253,28 @@ p{margin:0}
      font-size: 24px;
    }
 
+/*Contacto docente section*/  
+   .contacto-docente-section{
+     display: grid;
+     grid-template-columns: 50% 1px 49%;
+     gap:10px;
+   }
 
+   .content-docente-width-contacto{
+    min-width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .v-hr-2{
+    border:none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);
+    height: auto!important;
+    width: 2px;   
+    margin: 0;    
+  }
 
 
  /*Copy Paste ---------------------------------------------------------------------------*/
