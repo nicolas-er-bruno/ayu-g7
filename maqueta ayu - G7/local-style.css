@@ -4,6 +4,10 @@ body{
  font-family: 'Roboto', sans-serif;
 }
 
+div:focus {
+outline: .2rem solid #f16e00;
+}
+
 p{margin:0}
  .g-bg-white {background-color: #fff;}
  
@@ -87,11 +91,9 @@ p{margin:0}
     justify-content: space-between;
   }
 
-  .actions-questions .paginator-cutom{
-    display: flex;
-  }
-  .actions-questions .paginator-cutom a,
-  .actions-questions .paginator-cutom button{
+ 
+  .actions-questions a,
+  .actions-questions button{
     margin-right: 20px;
     border-radius: 50%;
   }
