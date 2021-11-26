@@ -18,49 +18,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 
+
   </head>
   <body class="g-bg-gray">
-  
+    <a class="skip-main" href="#main">Saltar a contenido principal</a>    
         <!-- As a heading -->
-        <!--<nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
-          <div class="nav-arreglo">      
-            <div  class="title-examen" style="display: flex; gap: 20px;">
-              <div>
-                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
-                  <p>En curso</p>
-              </div>
-            </div>
+        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+          <div class="nav-arreglo2">
+            
+                <div>
+                    <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                    <p>Examen en curso</p>
+                </div>
+                      
+            
             <div style="display: flex; justify-content: right;">
-               <span>Timer 20:00</span>
-            </div>
-          </div>          
-        </nav>-->
-      <a class="skip-main" href="#main">Saltar a contenido principal</a>
-      <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
-        <div class="nav-arreglo2">
-          
-              <div>
-                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
-                  <p>Examen en curso</p>
+                 <span aria-label="tiempo restante, 20 minutos">Tiempo Restante: 19 min</span>
               </div>
-                    
-          
-          <div style="display: flex; justify-content: right;">
-               <span aria-label="tiempo restante, 20 minutos">Tiempo Restante: 20 min</span>
-            </div>
-        </div>          
-      </nav>
-    
-    
+          </div>          
+        </nav>
        
         <!-- MAIN CONTAINER -->
-        <div class="g-containter">             
+        <div class="g-containter">
              <!-- CONTAINER BG blanco -->
             <div class="g-containter-white">
                 <!-- section cabecera -->
                 <div>
                   <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pregunta 1 de 4">1 de 4</div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuemin="1" aria-valuemax="4" aria-valuenow="3" aria-valuetext="Paso 3 de 4">2 de 4</div>
                   </div>
 
                    <!--<div style="display:flex; flex-direction: row; justify-content: space-between;">
@@ -101,47 +86,41 @@
                       </div>-->
                 </div>
 
-                <h1 style="margin:20px 0">1 - Preparación de salsas</h1>
-                <p>Indicar cuál de estas salsas lleva carne.</p>
-                                              
-             <form style="margin:20px 0">
-               
+                <h1 style="margin:20px 0">3 - Recetas de Papúa Nueva Guinea</h1>
+                <p>En la isla de Papúa Nueva Guinea, la comida tiene un rol ritual en muchas funciones sociales. Sabiendo que desde 1835 la misma tiene influencia de cocina fusión española, ¿cuál de las siguientes frases corresponde al principio de "Un huevo hace mejor a cualquier plato" de Anthony Bourdain?</p>
+              
+          
+                <form style="margin:20px 0">
+                  
               
                 <fieldset>
                   <legend class="h6">Selecciona una respuesta</legend>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
-                     Salsa bolognesa
+                      Los mangos deben ser pelados bajo la luz de la luna
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                     <label class="form-check-label" for="flexRadioDefault2">
-                      Salsa blanca
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                    <label class="form-check-label" for="flexRadioDefault3">
-                       Salsa de tomate
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                    <label class="form-check-label" for="flexRadioDefault4">
-                      Ninguna de las anteriores
+                      El punto justo del arroz es el que corresponde a la economía
                     </label>
                   </div>
                 </fieldset>
-               </form>
-                
-             
+                  </form>
+
+            
+
+                <div class="mb-3">
+                  <label for="justifique-su-respuesta-text" class="form-label">Justifica tu respuesta</label>
+                  <textarea class="form-control" id="justifique-su-respuesta-text" rows="3"></textarea>
+                </div>
 
                 <div class="actions-questions">
-                    <button type="button" class="btn btn-outline-success" disabled><span class="icon-arrow_back_ios" aria-label="Pregunta anterior"></span></button>
-                    <a class="btn btn-outline-success" href="pregunta-molde-02.html" role="button"><span class="icon-arrow_forward_ios" aria-label="Pregunta siguiente"></span></a>
-                  </div>
+                  <a class="btn btn-outline-success" href="pregunta-molde-02.html" role="button"><span class="icon-arrow_back_ios"  aria-label="Pregunta anterior"></span></a>
+                  <a class="btn btn-outline-success" href="pregunta-molde-04.html" role="button"><span class="icon-arrow_forward_ios" aria-label="Pregunta siguiente"></span></a>
+                </div>
                   
                 </div>
 
@@ -205,9 +184,11 @@
               </div>
               </div>
   
+            
+  
   
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true" aria-modal="true">
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" aria-modal="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -215,7 +196,7 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <p>Estás a punto de entregar tu examen.</p>
+                      <p>Estas a punto de entregar tu exámen.</p>
                       <p>¿Querés continuar?</p>
                     </div>
                     <div class="modal-footer"> 
@@ -226,7 +207,6 @@
                   </div>
                 </div>
               </div>
-
         </div>
 
 
@@ -236,15 +216,6 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    
-    <script>
-      var myModal = document.getElementById('myModal')
-      var myInput = document.getElementById('myInput')
-
-      myModal.addEventListener('shown.bs.modal', function () {
-        myInput.focus()
-      })
-    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

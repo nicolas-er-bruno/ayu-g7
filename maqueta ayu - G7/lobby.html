@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,11 +16,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 
 
-    <title>Perfile docente</title>
+    <title>Examio - Antes de comenzar</title>
   </head>
   <body class="g-bg-gray">
+    <a class="skip-main" href="#main">Saltar a contenido principal</a>    
     
-    <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+    <!--<nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
       <div class="nav-arreglo">
         <ol class="breadcrumb" style="margin:auto 0;">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>          
@@ -37,19 +38,32 @@
         <span class="icon-person"></span>
         </div>
       </div>          
-    </nav>
+    </nav>-->
+    <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <div class="nav-arreglo2">
+          <ol class="breadcrumb" style="margin:auto 0;">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>          
+          <li class="breadcrumb-item active" aria-current="page">Indicaciones del examen</li>
+        </ol>           
+          
+          <div style="display: flex; gap:20px;">
+            <span class="icon-person" aria-label="menu" tabindex="0" role="button"></span>
+            <span class="icon-logout" aria-label="cerrar sesion" tabindex="0" role="button"></span>
+          </div>
+        </div>          
+      </nav>
 
-    <h1 class="g-h-flotante">¡Antes de comenzar!</h1>
+    <h1 class="g-h-flotante">¡Estás a punto de comenzar!</h1>
     <div class="g-containter">        
       <!-- CONTAINER BG blanco -->
        <div class="containter-info-examen">            
-         <h2 class="h4" style="margin:0px;">Info del examen</h2>
-         <hr></hr>
+         <h2 class="h4" style="margin:0px;">Información general</h2>
+         <hr aria-hidden="true" tabindex="-1"></hr>
          <p>4 Preguntas</p>
-         <hr></hr>
+         <hr aria-hidden="true" tabindex="-1"></hr>
          <p> 20 minutos</p>
-         <hr></hr>
-         <a class="btn btn-success" href="pregunta-molde-01.html" role="button">Iniciar examen</a>
+         <hr aria-hidden="true" tabindex="-1"></hr>
+         <a class="btn btn-success" href="pregunta-molde-01.html" role="button">Comenzar examen</a>
        </div>
    </div>
     <div class="g-containter">        
@@ -58,22 +72,22 @@
            <div style="display: flex; margin-bottom: 32px;">
             <span class="icon-portable_wifi_off" style="font-size: 50px; margin-right: 24px;"></span>
             <div>
-              <h2>sin wifi</h2>
-              <p>texto sin wifi</p>
+              <h2>Conectividad</h2>
+              <p>Si pierdes la conexión puedes continuar con el examen, tus respuestas se guardarán automáticamente.</p>
             </div>                      
            </div>
            <div style="display: flex; margin-bottom: 32px;">
             <span class="icon-phone" style="font-size: 50px; margin-right: 24px;"></span>
             <div>
               <h2>Contactar docente</h2>
-              <p>texto contactar docente</p>
+              <p>Recuerda que siempre puedes contactar a un docente en caso de tener alguna duda.</p>
             </div>                      
            </div>       
            <div style="display: flex; margin-bottom: 32px;">
             <span class="icon-logout" style="font-size: 50px; margin-right: 24px;"></span>
             <div>
-              <h2>No salir del examen</h2>
-              <p>texto no salir del examen</p>
+              <h2>Intentos permitidos</h2>
+              <p>Una vez entregues o salgas del examen no podrás ingresar de nuevo para continuar o cambiar tus respuestas.</p>
             </div>                      
            </div>  
            <!-- Acordion -->
@@ -81,12 +95,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Preguntas frecuentes
+                  Otras aclaraciones
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Cada pregunta equivale al 25% de la nota.</strong>
                 </div>
               </div>
             </div>

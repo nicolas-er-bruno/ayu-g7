@@ -20,54 +20,34 @@
   
 
   </head>
-  <body class="g-bg-gray modal-open" style="overflow: hidden; padding-right: 17px;">
-    <a class="skip-main" href="#main">Saltar a contenido principal</a>    
-      <!-- Modal -->
-          <div class="modal fade show" tabindex="1" aria-modal="true" style="display: block;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title h5" id="exampleModalLabel" aria-label="llego tu turno">Llegó tu turno</p>
-                    <a class="btn-close" href="pregunta-molde-02.html" role="button" aria-label="Close"></a>
-                </div>
-                <div class="modal-body">
-                    <p>Tené a mano las preguntas para el docente.</p>                    
-                </div>
-                <div class="modal-footer">                      
-                    <!--<button type="button" class="btn btn-success" href="/contactar-docente">Contactar</button>-->
-                    <a class="btn btn-outline-success" href="pregunta-molde-02.html" role="button">Cambié de opinión</a>
-                    <a class="btn btn-success" href="contacto-docente.html" role="button">Conectarme</a>
-                </div>
-                </div>
-            </div>
-            </div>
-    <div aria-hidden="true" tabindex="-1">
-        <!-- As a heading -->
-        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
-          <div class="nav-arreglo">      
-            <div  class="title-examen" style="display: flex; gap: 20px;">
+  <body class="g-bg-gray">
+    <a class="skip-main" href="#main">Saltar a contenido principal</a>
+      <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <div class="nav-arreglo2">
+          
               <div>
                   <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
-                  <p>En curso</p>
+                  <p>Examen en curso</p>
               </div>
+                    
+          
+          <div style="display: flex; justify-content: right;">
+               <span aria-label="tiempo restante, 20 minutos">Tiempo Restante: 20 min</span>
             </div>
-            <div style="display: flex; justify-content: right;">
-               <span>Tiempo Restante: 20 min</span>
-            </div>
-          </div>          
-        </nav>
+        </div>          
+      </nav>
        
         <!-- MAIN CONTAINER -->        
         <div class="g-containter">  
-            <div class="alert alert-success" role="alert" style="width: 100%;">
-              Esperando docente | 2 alumnos delante <span class="icon-cancel" style="font-size: 24px; float: right;"></span>
+            <div class="alert alert-success" role="alert" style="width: 100%; vertical-align:center;">
+              Esperando docente | 1 alumno adelante tuyo  <a class="btn btn-success" href="pregunta-molde-03.html" role="button" style="float: right;">Cancelar turno</a>
             </div>           
-            <!-- CONTAINER BG blanco -->
-            <div class="g-containter-white">
+             <!-- CONTAINER BG blanco -->
+             <div class="g-containter-white">
               <!-- section cabecera -->
               <div>
                 <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuemin="1" aria-valuemax="4" aria-valuenow="2" aria-valuetext="Pregunta 1 de 4">2 de 4</div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuemin="1" aria-valuemax="4" aria-valuenow="3" aria-valuetext="Paso 3 de 4">2 de 4</div>
                 </div>
 
                  <!--<div style="display:flex; flex-direction: row; justify-content: space-between;">
@@ -108,47 +88,41 @@
                     </div>-->
               </div>
 
-              <h1 style="margin:20px 0">2 - Pastas básicas</h1>
-              <p>Indicar cuál es el orden correcto para preparar fideos.</p>
-                                            
-           <form style="margin:20px 0">
-             
+              <h1 style="margin:20px 0">3 - Recetas de Papúa Nueva Guinea</h1>
+              <p>En la isla de Papúa Nueva Guinea, la comida tiene un rol ritual en muchas funciones sociales. Sabiendo que desde 1835 la misma tiene influencia de cocina fusión española, ¿cuál de las siguientes frases corresponde al principio de "Un huevo hace mejor a cualquier plato" de Anthony Bourdain?</p>
+            
+        
+              <form style="margin:20px 0">
+                
             
               <fieldset>
                 <legend class="h6">Selecciona una respuesta</legend>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                   <label class="form-check-label" for="flexRadioDefault1">
-                    Poner el agua, hervirla, poner sal, poner los fideos.
+                    Los mangos deben ser pelados bajo la luz de la luna
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                   <label class="form-check-label" for="flexRadioDefault2">
-                    Picar una cebolla y saltearla hasta que esté dorada.
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                  <label class="form-check-label" for="flexRadioDefault3">
-                    Saltear los fideos y agregar agua hasta que hierva.
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                  <label class="form-check-label" for="flexRadioDefault4">
-                    Cortar cubitos de zapallo y meterlos al horno.
+                    El punto justo del arroz es el que corresponde a la economía
                   </label>
                 </div>
               </fieldset>
-             </form>
-              
-           
+                </form>
+
+          
+
+              <div class="mb-3">
+                <label for="justifique-su-respuesta-text" class="form-label">Justifica tu respuesta</label>
+                <textarea class="form-control" id="justifique-su-respuesta-text" rows="3"></textarea>
+              </div>
 
               <div class="actions-questions">
-                <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button"><span class="icon-arrow_back_ios"  aria-label="Pregunta anterior"></span></a>
-                <a class="btn btn-outline-success" href="pregunta-molde-03.html" role="button"><span class="icon-arrow_forward_ios" aria-label="Pregunta siguiente"></span></a>
-                </div>
+                <a class="btn btn-outline-success" href="pregunta-molde-02-consulta.html" role="button"><span class="icon-arrow_back_ios"  aria-label="Pregunta anterior"></span></a>
+                <a class="btn btn-outline-success" href="pregunta-molde-04-consulta.html" role="button"><span class="icon-arrow_forward_ios" aria-label="Pregunta siguiente"></span></a>
+              </div>
                 
               </div>
 
@@ -165,7 +139,7 @@
             
               <div class="d-grid gap-2 d-md-block" style="width:100%;">
               <!-- Button trigger modal -->
-                <button type="button" style="width:49%;"class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" style="width:49%;"class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>
                     Contactar docente
                 </button>
               <!-- Button trigger modal -->
@@ -175,8 +149,44 @@
               </div>
             </div>
                          
-          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-modal="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contactar docente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
+                    <p>Podés contactar a algún docente disponible por cualquier consulta que tengas durante el examen.</p>
+                    <p>Ten en cuenta que puede tomar unos minutos mientras los docentes terminan de responder las preguntas de tus compañeros.</p>
+
+                    <!-- Acordion preuntas frecuentes-->
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <strong>Preguntas Frecuentes</strong>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p><strong>¿Qué puntaje tienen las preguntas?</strong> Cada pregunta equivale al 25% de la nota.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">                      
+                    <!--<button type="button" class="btn btn-success" href="/contactar-docente">Contactar</button>-->
+                    <a class="btn btn-success" href="contactar-docente.html" role="button">Contactar</a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+          
 
 
             <!-- Modal -->
@@ -188,7 +198,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <p>Estas a punto de entregar tu exámen.</p>
+                    <p>Estás a punto de entregar tu examen.</p>
                     <p>¿Querés continuar?</p>
                   </div>
                   <div class="modal-footer"> 
@@ -202,7 +212,7 @@
 
       </div>
 
-</div>
+
 
 
   <!-- Optional JavaScript; choose one of the two! -->
@@ -224,6 +234,5 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
   -->
-  <div class="modal-backdrop fade show"></div>
 </body>
 </html>

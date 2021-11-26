@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
 
-    <title>Llamada docente</title>
+    <title>Examio - Llamada con docente</title>
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,8 +26,9 @@
 
   </head>
   <body class="g-bg-gray">
+    <a class="skip-main" href="#main">Saltar a contenido principal</a>    
         <!-- As a heading -->
-        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <!--<nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
           <div class="nav-arreglo">
             <ol class="breadcrumb" style="margin:auto 0;">
               <li class="breadcrumb-item"><a href="pregunta-molde-01.html">Examen</a></li>
@@ -43,12 +44,30 @@
               <span>Timer 20:00</span>
             </div>
           </div>          
-        </nav>
+        </nav>-->
+        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <div class="nav-arreglo2">
+          <ol class="breadcrumb" style="margin:auto 0;">
+              <li class="breadcrumb-item"><a href="pregunta-molde-01.html">Examen</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Llamada docente</li>
+            </ol>  
+          
+              <div>
+                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                  <p>Examen en curso</p>
+              </div>
+                    
+          
+          <div style="display: flex; justify-content: right;">
+               <span aria-label="tiempo restante, 20 minutos">Tiempo restante: 20 minutos</span>
+            </div>
+        </div>          
+      </nav>
        
         <!-- MAIN CONTAINER -->
         <div class="g-containter">
             <div style="width: 100%;">
-              <h1 class="g-h-flotante">Titulo</h1>
+              <h1 class="g-h-flotante">Despejá todas tus dudas</h1>
             </div>
              <!-- CONTAINER BG blanco -->
             <div class="g-containter-white" style="padding: 32px;">              
@@ -58,6 +77,10 @@
                     
                     Your browser does not support the video tag.
                   </video>
+                  <div style="display:flex; width:100%; justify-content: space-around;" aria-label="Opciones de videollamada">
+                    <button type="button" class="btn btn-secondary" style="width:45%;">Cámara</button>
+                    <button type="button" class="btn btn-secondary"  style="width:45%;">Microfono</button>
+                  </div>
                   <!-- chat -->
                   <!--<div class="d-flex" style="width: 100%;" role="region" aria-label="chat con el profesor" tabindex="0">
                     <div style="width: 100%;" id="chat-content" tabindex="0" aria-live="polite">
@@ -72,11 +95,13 @@
                         
                     </div>
                   </div>-->
+                  
+                  <!-- chat docente-->
                   <div role="region" aria-labelledby="tchat-label">
 
                     <div id="chatbot-window" style="display: block;">
                       <div id="chatbot">
-                        <span id="chatbot-title" role="heading" aria-level="1">Chat con "Profesora nombre" <span class="sr-only">Chat con el profesora</span></span>
+                        <span id="chatbot-title" role="heading" aria-level="1">Chat con "Docente" <span class="sr-only">Chat con docente</span></span>
                         <!--<span id="chatbot-toolbar">
                           <button class="ico" id="chatbot-hide" title="Minimize the chat window" aria-label="Minimize the chat window"></button>
                           <button class="ico" id="chatbot-show" title="Show the chat window" aria-label="Show the chat window"></button>
@@ -84,7 +109,7 @@
                         </span>-->
                         <div id="chat-container" aria-live="polite">
                           <div id="chat-content" tabindex="0">
-                            <span data-from="Djingo" class="from sr-only" aria-hidden="true">Nombre profesora</span>
+                            <span data-from="Djingo" class="from sr-only" aria-hidden="true">Nombre docente</span>
                             <div class="messages" data-from="Djingo"><div class="message sr-only" tabindex="-1">
                               <span class="sr-only">Djingo says: </span>
                               
@@ -100,7 +125,7 @@
                       </div>
                     </div>
                     
-                    <button class="btnChatbot sr-only" id="btnChatbot">Contact</button>
+                    <button class="btnChatbot sr-only" id="btnChatbot" aria-hidden"ture" tabindex="-1">Contact</button>
                   </div>
                   
                   <div aria-hidden="true" id="sound"><audio autoplay="autoplay"><source src="./chat bot_files/sound-chat.mp3" type="audio/mpeg"><embed hidden="true" autostart="true" loop="false" src="./chat bot_files/sound-chat.mp3"></audio></div>
@@ -113,15 +138,15 @@
                 </div>
                 <hr class="v-hr-2"></hr>
                 <div>
-                <h2>Glosario</h2>
+                <h2>Preguntas del examen</h2>
                  <!-- Acordion -->
-                  <div class="accordion" id="accordionExample" style="width: 100%;">
+                  <ol class="accordion" id="accordionExample" style="width: 100%; list-style:none; padding-left:0;">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
+                      <li class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                          01 - Preparación de salsas
+                          1. Preparación de salsas
                         </button>
-                      </h2>
+                      </li>
                       <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
@@ -129,11 +154,11 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
+                      <li class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          02 - Pastas básicas 
+                          2. Pastas básicas 
                         </button>
-                      </h2>
+                      </li>
                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
@@ -141,12 +166,12 @@
                       </div>
                     </div>
                     <div class="accordion-item">
-                      <span style="margin: 12px 0 0 12px;" class="badge bg-warning text-dark">Incompleta</span>
-                      <h2 class="accordion-header" id="headingThree">
+                      
+                      <li class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          03 - Recetas de Papúa Nueva Guinea 
+                          3. Recetas de Papúa Nueva Guinea <span style="margin: 12px 0 0 12px;" class="badge bg-warning text-dark">Incompleta</span>
                         </button>
-                      </h2>
+                      </li>
                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
@@ -155,19 +180,19 @@
                     </div>
 
                     <div class="accordion-item">
-                      <span style="margin: 12px 0 0 12px;" class="badge bg-warning text-dark">Incompleta</span>
-                      <h2 class="accordion-header" id="headingFour">
+                      
+                      <li class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          04 - Vinos y salsas 
+                          4. Vinos y salsas  <span style="margin: 12px 0 0 12px;" class="badge bg-warning text-dark">Incompleta</span>
                         </button>
-                      </h2>
+                      </li>
                       <div id="collapseTFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </ol>
                
               </div>
             </div>
@@ -175,18 +200,18 @@
             
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">¡Terminar consulta</h5>
+                    <h2 class="modal-title" id="staticBackdropLabel">Terminé mi consulta</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     Texto del modal
                   </div>
                   <div class="modal-footer">                    
-                    <a class="btn btn-success" href="pregunta-molde-02.html" role="button">Continuar examen</a>
+                    <a class="btn btn-success" href="pregunta-molde-03.html" role="button">Continuar examen</a>
                     <!--<button type="button" class="btn btn-outline-success">Seguir con mi examen</button>-->
                   </div>
                 </div>

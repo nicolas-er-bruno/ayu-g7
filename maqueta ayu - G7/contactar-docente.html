@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
 
-    <title>contactar docente</title>
+    <title>Examio - Contactar docente</title>
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,8 +20,9 @@
 
   </head>
   <body class="g-bg-gray">
+    <a class="skip-main" href="#main">Saltar a contenido principal</a>    
         <!-- As a heading -->
-        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <!--<nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
           <div class="nav-arreglo">
             <ol class="breadcrumb" style="margin:auto 0;">
               <li class="breadcrumb-item"><a href="index.html">Examen</a></li>
@@ -37,12 +38,31 @@
               <span>Timer 20:00</span>
             </div>
           </div>          
-        </nav>
+        </nav>-->
+        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <div class="nav-arreglo2">
+          <ol class="breadcrumb" style="margin:auto 0;">
+              <li class="breadcrumb-item"><a href="pregunta-molde-01.html">Examen</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contactar docente</li>
+            </ol>  
+          
+              <div>
+                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                  <p>Examen en curso</p>
+              </div>
+                    
+          
+          <div style="display: flex; justify-content: right;">
+               <span aria-label="tiempo restante, 20 minutos">Tiempo restante: 20 minutos</span>
+            </div>
+        </div>          
+      </nav>
        
         <!-- MAIN CONTAINER -->
         <div class="g-containter">
+          <main style="width:100%;">
             <div style="width: 100%;">
-              <h1 class="g-h-flotante">¡Ta te asignamos un docente!</h1>
+              <h1 class="g-h-flotante">Elige el docente a contactar</h1>
             </div>
              <!-- CONTAINER BG blanco -->
             <div class="g-containter-white">              
@@ -52,13 +72,13 @@
                   <div>
                     <h2>Anna Coppola</h2>
                     <p>Docente titular</p>
-                    <p>Docente desde 2018</p>
+                    <p>Desde 2016</p>
                   </div>
                 </div>
-                <hr class="v-hr"></hr>
+                <hr class="v-hr" aria-hidden="true" tabindex="-1"></hr>
                 <div class="content-estudiantes-width">
-                  <p class="h5">2 estudiantes adelante tuyo</p>
-                  <p>8 minutos por estudiante aproximadamente</p>
+                  <p class="h5">1 alumno adelante tuyo</p>
+                  <p>2 minutos de espera aproximadamente</p>
                 </div>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-success btn-confirm-do" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -66,14 +86,14 @@
                 </button>
               </div>
             </div>
-
+          </main>
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" >
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">¡Ya estás en la lista de espera!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2 class="h5" id="staticBackdropLabel">Ya estás en la lista de espera</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                   </div>
                   <div class="modal-body">
                     Vas a hablar con tu docente una vez termine de ayudar a tus compañeros, mientras podés continuar tu examen.
@@ -86,32 +106,34 @@
               </div>
             </div>
 
-            <div class="otros-docentes">
-              <h2 class="h4">Eleguir otro docente</h2>
-              <hr>
-              <div class="otro-docente">
-                <div class="docente">
-                  <img alt="" src="assets/docente-marguerita.png" style="width: 50px; height: 50px;">
-                  <div>
-                    <h3 class="h5">Margarita Rossi</h3>
-                    <p>Docenten titular</p>
+            <div class="otros-docentes" role="complementary">
+              <h2 class="h4">TAMBIÉN PODÉS ELEGIR OTRO DOCENTE</h2>
+              <hr  aria-hidden="true" tabindex="-1">
+              <ul class="ul-otro-docente">
+                <li class="otro-docente">
+                  <div class="docente">
+                    <img alt="" src="assets/docente-marguerita.png" style="width: 50px; height: 50px;">
+                    <div>
+                      <h3 class="h5" id="nombre-docente-01">Margarita Rossi</h3>
+                      <p>Docente titular</p>
+                    </div>
                   </div>
-                </div>
-                <p><strong>6 estudiantes en espera</strong></p>
-                <a class="btn btn-outline-success" href="#" role="button">Solicitar</a>
-              </div>
-              <hr>
-              <div class="otro-docente">
-                <div class="docente">
-                  <img alt="" src="assets/docente-mario.png" style="width: 50px; height: 50px;">
-                  <div>
-                    <h3 class="h5">Mario Longo</h3>
-                    <p>Docente auxiliar</p>
+                  <p><strong>2 alumnos adelante tuyo</strong></p>
+                  <a class="btn btn-outline-success" href="#" role="button" aria-labelledby="nombre-docente-01">Solicitar</a>
+                </li>
+                <hr aria-hidden="true" tabindex="-1">
+                <li class="otro-docente">
+                  <div class="docente">
+                    <img alt="" src="assets/docente-mario.png" style="width: 50px; height: 50px;">
+                    <div>
+                      <h3 class="h5" id="nombre-docente-02">Mario Longo</h3>
+                      <p>Docente auxiliar</p>
+                    </div>
                   </div>
-                </div>
-                <p><strong>6 estudiantes en espera</strong></p>
-                <a class="btn btn-outline-success" href="#" role="button">Solicitar</a>
-              </div>
+                  <p><strong>6 estudiantes en espera</strong></p>
+                  <a class="btn btn-outline-success" href="#" role="button" aria-labelledby="nombre-docente-02">Solicitar</a>
+                </li>
+              </ul>
             </div> 
         </div>
 

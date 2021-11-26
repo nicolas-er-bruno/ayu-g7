@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
 
-    <title>base para molde de preguntas</title>
+    <title>Examio - Introducción a la cocina italiana</title>
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,11 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 
-
   </head>
   <body class="g-bg-gray">
+  
         <!-- As a heading -->
-        <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <!--<nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
           <div class="nav-arreglo">      
             <div  class="title-examen" style="display: flex; gap: 20px;">
               <div>
@@ -34,16 +34,33 @@
                <span>Timer 20:00</span>
             </div>
           </div>          
-        </nav>
+        </nav>-->
+      <a class="skip-main" href="#main">Saltar a contenido principal</a>
+      <nav class="navbar navbar-light" style="margin-bottom: 22px; padding: 8px 24px; background-color: #fff;">
+        <div class="nav-arreglo2">
+          
+              <div>
+                  <span class="navbar-brand mb-0 h1">Introducción a la cocina italiana</span>
+                  <p>Examen en curso</p>
+              </div>
+                    
+          
+          <div style="display: flex; justify-content: right;">
+               <span aria-label="tiempo restante, 20 minutos">Tiempo Restante: 19 min</span>
+            </div>
+        </div>          
+      </nav>
+    
+    
        
         <!-- MAIN CONTAINER -->
-        <div class="g-containter">
+        <div class="g-containter">             
              <!-- CONTAINER BG blanco -->
             <div class="g-containter-white">
                 <!-- section cabecera -->
                 <div>
                   <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">2 de 4</div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuemin="1" aria-valuemax="4" aria-valuenow="2" aria-valuetext="Pregunta 1 de 4">2 de 4</div>
                   </div>
 
                    <!--<div style="display:flex; flex-direction: row; justify-content: space-between;">
@@ -84,44 +101,46 @@
                       </div>-->
                 </div>
 
-                <h1>02 - Pastas básicas</h1>
-                <p>Texto descriptivo de la preguhnta si es que fuera necesario, ya que no todas las preguntas lo tendrian. Pero en el caso de tenerlo asi se veria.</p>
+                <h1 style="margin:20px 0">2 - Pastas básicas</h1>
+                <p>Indicar cuál es el orden correcto para preparar fideos.</p>
+                                              
+             <form style="margin:20px 0">
+               
+              
+                <fieldset>
+                  <legend class="h6">Selecciona una respuesta</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Poner el agua, hervirla, poner sal, poner los fideos.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Picar una cebolla y saltearla hasta que esté dorada.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Saltear los fideos y agregar agua hasta que hierva.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                      Cortar cubitos de zapallo y meterlos al horno.
+                    </label>
+                  </div>
+                </fieldset>
+               </form>
                 
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Poner el agua, hervirla, poner sal, poner los fideos
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Picar una cebolla y saltearla hasta que esté dorada
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Hervir los fideos
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Cortar cubitos de zapallo y meterlos al horno
-                  </label>
-                </div>
-
-                </br>
-
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Justifique su respuesta</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
+             
 
                 <div class="actions-questions">
-                    <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button"><span class="icon-arrow_back_ios"></span></a>
-                    <a class="btn btn-outline-success" href="#" role="button"><span class="icon-arrow_forward_ios"></span></a>
+                  <a class="btn btn-outline-success" href="pregunta-molde-01.html" role="button"><span class="icon-arrow_back_ios"  aria-label="Pregunta anterior"></span></a>
+                  <a class="btn btn-outline-success" href="pregunta-molde-03.html" role="button"><span class="icon-arrow_forward_ios" aria-label="Pregunta siguiente"></span></a>
                   </div>
                   
                 </div>
@@ -150,11 +169,11 @@
             </div>
                            
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-modal="true">
               <div class="modal-dialog">
                   <div class="modal-content">
                   <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Contactar docente</h5>
+                      <h2 class="modal-title" id="exampleModalLabel">Contactar docente</h2>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -172,7 +191,7 @@
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <p>Aca habira un <strong>ul</strong> con <strong>ol´s</strong> con <strong>las preguntas frecuentes</strong>. </p>
+                              <p><strong>¿Qué puntaje tienen las preguntas?</strong> Cada pregunta equivale al 25% de la nota.</p>
                             </div>
                           </div>
                         </div>
@@ -186,19 +205,17 @@
               </div>
               </div>
   
-            
-  
   
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" aria-modal="true">
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true" aria-modal="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">¡Estás a un paso!</h5>
+                      <h2 class="modal-title" id="staticBackdropLabel">¡Estás a un paso!</h2>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <p>Estas a punto de entregar tu exámen.</p>
+                      <p>Estás a punto de entregar tu examen.</p>
                       <p>¿Querés continuar?</p>
                     </div>
                     <div class="modal-footer"> 
@@ -209,6 +226,7 @@
                   </div>
                 </div>
               </div>
+
         </div>
 
 
@@ -218,6 +236,15 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    
+    <script>
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
